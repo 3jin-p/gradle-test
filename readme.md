@@ -29,7 +29,7 @@ Total time: xx.xx secs
 ```bash
 $ gradle tasks
 ```
-플러그인을 추가하면 해당 플러그인의 태스크들도 추가된다.
+플러그인을 추가하면 해당 플러그인의 태스크들도 추가된다.  
 추가한 플러그인의 태스크들이 궁금할때에도 위 명령어를 입력해보면 된다.
 
 - 빌드 스크립트에 정의된 속성 목록의 확인
@@ -40,12 +40,12 @@ $ gradle properties
 #### 3. 로깅 명령줄 옵션
 디버깅이 필요할때는 명령줄 옵션으로 로그를 추가 할 수 있다.
 
-- -i(--info) : INFO 레벨의 로그, 빌드 스크립트의 파일명 등이 출력
-- -s(--stacktrace) : 예외 발생 시 사용자 예외 부분만 Stack Trace 한다.
-- -S(--full-stacktrace) : 모든 부분을 Stack Trace 한다. 사용자 예외가 아닌 gradle에 문제가 발생했을때 사용한다.
-- -d(--debug) : DEBUG 레벨의 로그, Stack Trace 를 포함한 매우 상세한 정보가 출력된다.
+- **-i(--info) :** INFO 레벨의 로그, 빌드 스크립트의 파일명 등이 출력
+- **-s(--stacktrace) :** 예외 발생 시 사용자 예외 부분만 Stack Trace 한다.
+- **-S(--full-stacktrace) :** 모든 부분을 Stack Trace 한다. 사용자 예외가 아닌 gradle에 문제가 발생했을때 사용한다.
+- **-d(--debug) :** DEBUG 레벨의 로그, Stack Trace 를 포함한 매우 상세한 정보가 출력된다.
 
-
+---
 ### 프로젝트 자동화와 빌드
 
 #### 1. init 을 이용한 프로젝트 자동 생성
@@ -92,7 +92,7 @@ $ gradle init --type java-library
 ```
 
 #### 3. 빌드
-- 빌드
+- **빌드**
 ```bash
 $ gradle build
 
@@ -123,15 +123,15 @@ BUILD SUCCESSFUL in 4s
 build 안에는 많은 Task 들이 포함되어 있다.  
 하지만 gradle 은 이전 빌드와 프로젝트의 변경상태를 확인하여 불필요한 Task 는 실행을 생략한다.
 
-- 빌드 실행 결과 제거
+- **빌드 실행 결과 제거**
 ```bash
 $ gradle clean
 ```
 clean 을 하면 build 디렉터리에 생성된 빌드 결과들을 제거한다.
 
-- 테스트 실행과 결과 확인  
-위에서 알 수 있듯 빌드 태스크를 실행하면 test 태스크도 함께 실행된다.
-  
+- **테스트 실행과 결과 확인**  
+위에서 알 수 있듯 빌드 태스크를 실행하면 test 태스크도 함께 실행된다.  
+---
 ### Gradle 의 편리한 기능
 #### 1. 데몬
 빌드나 명령을 반복해야할때 Gradle 을 jvm을 데몬으로 상주시켜 빌드 속도를 향상시킬 수 있다.
